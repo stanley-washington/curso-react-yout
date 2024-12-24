@@ -1,0 +1,20 @@
+import { useState } from "react";
+
+function App() {
+  const [mensagem, setMessagem] = useState("Tori Black");
+
+  return (
+    <div>
+      <h1>{mensagem}</h1>
+      <button
+        onClick={() => {
+          setMessagem("Sasha Grey");
+        }}
+      >
+        Mudar Mensagem
+      </button>
+    </div>
+  );
+}
+
+export default App;
