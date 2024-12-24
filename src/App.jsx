@@ -3,8 +3,6 @@ import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 import { v4 } from "uuid";
 import Title from "./components/Title";
-//import Test from "./components/Test";
-//import "./App.css";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -63,7 +61,6 @@ function App() {
   return (
     <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
       <div className="w-[500px] space-y-4">
-        {/*<Test />*/}
         <Title>Gerenciador de Tarefas</Title>
         <AddTask onAddTaskSubmit={onAddTaskSubmit} />
         <Tasks
